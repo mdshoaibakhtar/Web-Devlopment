@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background: rgb(0, 0, 0);
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0px 70px;
+    font-size: 1.7rem;
+    position: relative;
+    top: 20px;
+    color: chartreuse;
+}
+.navbar a:hover{
+    font-size: 1.7878rem;
+    top: 24px;
+}
+.navbar ul img{
+    width: 80px;
+    height: 70px;
+}
+
+.navbar ul img:hover{
+    width: 82px;
+    height: 72px;
+}
+
+.home{
+    background: url('../image/boy.jpg')no-repeat center center;
+    height: 750px;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    margin: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.card img{
+    width: 400px;
+    cursor: pointer;
+}
+.card button{
+    margin: 10px;
+    width: 90%;
+    height: 35px;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid red;
+}
+.card button:hover{
+    background: rgb(209, 199, 199);
+    font-size: 1.67896rem;
+
+}
+
+
+.service{
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.service img:hover{
+    width: 295px;
+    height: 265px;
+}
+
+.item{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 20px 30px;
+
+}
+.itemm{
+    display: flex;
+    flex-direction:row;
+    margin: 20px 30px;
+
+
+}
+.item p{
+    font-size: 1.7rem;
+    margin: 30px;
+}
+.itemm p{
+    font-size: 1.7rem;
+    margin: 30px;
+}
+.item img{
+    width: 300px;
+    height: 270px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.itemm img{
+    width: 300px;
+    height: 270px;
+    margin-left: 10px;
+    border-radius: 15px;
+    }
+
+
+
+.form{
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+label{
+
+}
+input{
+      width: 500px;
+      font-size: 1.4rem;
+      padding: 2px;
+}
+
+.form #addtxt{
+    margin-top: 10px;
+    height: 100px;
+    padding: 0;
+}
+
+.form button{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 24px;
+    background: none;
+    cursor: pointer;
+    color: green;
+    font-size: 1.2rem;
+}
+.form button:hover{
+    margin-top: 10px;
+    background: rgb(107, 107, 107);
+    color: black;
+}
+
+.form select{
+    width: 510px;
+    font-size: 1.4rem;
+
+}
+
+.foo{
+    background: rgb(146, 146, 146);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+footer p{
+    font-size: 1.4rem;
+}
+
+
+/* Code for Responsive */
+@media (max-width:1410px){
+
+    .navbar{
+    /* background: rgb(250, 18, 18); */
+    width: 1405px;
+        }
+        .home{
+            background: url('../image/boy.jpg')no-repeat center center;
+            height: 750px;
+            width: 1405px;
+        }
+        .service{
+            width: 1400px;
+        }
+
+}
+@media (max-width:1234px){
+
+    .navbar{
+    width: 1405px;
+    
+}
+.form{
+    width: 1193px;
+    margin: 10px 30px;
+}
+
+.foo{
+    width: 1385px;
+}
+
+.card{
+    margin: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.card img{
+    width: 400px;
+    cursor: pointer;
+}
+.card button{
+    margin: 10px;
+    width: 90%;
+    height: 35px;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid red;
+}
+.card button:hover{
+    background: rgb(209, 199, 199);
+    font-size: 1.67896rem;
+
+}
+}
+
+
+@media (max-width:500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 1250px;
+        width: 1395px;
+    }
+    .card{
+        height: 450px;
+    }
+}
